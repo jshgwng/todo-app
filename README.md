@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Todo Application
 
-## Getting Started
+A feature-rich todo application built with Next.js and Tailwind CSS that includes categories, filtering, and local storage persistence.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
+- Create and manage todos
+- Categorize todos
+- Filter todos by status (All/Active/Completed)
+- Local storage persistence
+- Responsive design
+- Custom category creation
+- Mark todos as complete/incomplete
+- Delete todos
+
+## Prerequisites
+
+- Node.js 14.0 or later
+- npm or yarn
+
+## Installation
+
+1. Clone the repository:
+   bash
+   git clone <your-repo-url>
+   cd todo-app
+
+
+2. Install dependencies:
+   bash
+   npm install
+# or
+yarn install
+
+
+3. Run the development server:
+   bash
+   npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+todo-app/
+├── app/
+│   └── page.js    # Main todo application component
+├── public/        # Static assets
+└── styles/        # Global styles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+### Adding a Todo
+1. Enter todo text in the input field
+2. Select a category (optional)
+3. Click "Add" or press Enter
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Managing Categories
+1. Enter new category name
+2. Click "Add" to create category
+3. Use category dropdown when creating todos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Filtering Todos
+Use the filter buttons to show:
+- All todos
+- Active todos
+- Completed todos
+
+## Technologies Used
+
+- Next.js 14
+- React
+- Tailwind CSS
+- LocalStorage API
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
